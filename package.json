@@ -37,13 +37,10 @@
     "lint:markdown": "markdownlint \"**/*.md\" --ignore \"**/node_modules/**\"",
     "lint:package-json": "yarn run format:package-json --check",
     "lint:prettier": "prettier \"**/*.{css,html,js,cjs,mjs,json,less,md,scss,ts,vue,yaml,yml}\" --check",
-    "test": "ava",
-    "test-coverage": "c8 ava",
+    "test": "uvu",
+    "test-coverage": "c8 yarn test",
     "release": "run-s clean build format test dist",
     "prepare": "husky install"
-  },
-  "ava": {
-    "verbose": true
   },
   "c8": {
     "reporter": [
@@ -57,11 +54,9 @@
   },
   "devDependencies": {
     "@fisker/eslint-config": "10.0.3",
-    "@fisker/eslint-config-ava": "2.0.4",
     "@fisker/husky-config": "4.1.1",
     "@fisker/lint-staged-config": "3.1.4",
     "@fisker/prettier-config": "5.0.3",
-    "ava": "3.15.0",
     "c8": "7.10.0",
     "del-cli": "4.0.1",
     "eslint": "8.4.1",
@@ -70,7 +65,8 @@
     "markdownlint-cli": "0.30.0",
     "npm-run-all": "4.1.5",
     "prettier": "2.5.1",
-    "sort-package-json": "1.53.1"
+    "sort-package-json": "1.53.1",
+    "uvu": "0.5.2"
   },
   "publishConfig": {
     "access": "public",
