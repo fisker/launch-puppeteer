@@ -15,8 +15,8 @@ jobs:
       matrix:
         os:
           - "ubuntu-latest"
-          # - "macos-latest"
-          # - "windows-latest"
+          - "macos-latest"
+          - "windows-latest"
         node_version:
           - "16"
           - "14"
@@ -48,6 +48,8 @@ jobs:
 
       - name: Run Test
         run: yarn test-coverage
+        env:
+          FORCE_COLOR: 2
 
       - name: Upload Coverage
         uses: coverallsapp/github-action@master
