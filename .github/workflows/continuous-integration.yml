@@ -48,8 +48,6 @@ jobs:
 
       - name: Run Test
         run: yarn test-coverage
-        env:
-          FORCE_COLOR: 2
 
       - name: Upload Coverage
         uses: coverallsapp/github-action@master
