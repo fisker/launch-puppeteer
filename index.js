@@ -5,6 +5,7 @@ async function launchBrowser(options) {
   let {executablePath} = {...options}
 
   if (!executablePath) {
+    console.log(await findChrome())
     ;({executablePath} = await findChrome())
   }
 
