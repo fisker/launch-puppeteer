@@ -16,5 +16,4 @@ module.exports = {
   rules: {},
   plugins: [],
   globals: {},
-  overrides: [{files: ['test.js'], extends: ['@fisker/ava']}],
 }
