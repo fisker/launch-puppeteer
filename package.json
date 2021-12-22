@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "find-chrome-bin": "0.1.0",
-    "puppeteer-core": "13.0.0"
+    "puppeteer-core": "13.0.1"
   },
   "devDependencies": {
     "@fisker/eslint-config": "10.0.7",
