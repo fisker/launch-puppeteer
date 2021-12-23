@@ -1,6 +1,6 @@
 {
   "name": "launch-puppeteer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Launch puppeteer browser",
   "homepage": "https://github.com/fisker/launch-puppeteer#readme",
   "bugs": {
