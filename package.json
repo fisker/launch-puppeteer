@@ -49,7 +49,7 @@
     ]
   },
   "dependencies": {
-    "find-chrome-bin": "1.0.4",
+    "find-chrome-bin": "1.0.5",
     "puppeteer-core": "19.2.2"
   },
   "devDependencies": {
